@@ -1,0 +1,138 @@
+# ----------------------------
+# SOC Portfolio - .gitignore
+# ----------------------------
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.code-workspace
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Node / JS (if used)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Terraform (if you add infra later)
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+crash.log
+crash.*.log
+
+# Ansible (if you add automation later)
+*.retry
+*.log
+ansible.cfg
+.vault_pass.txt
+
+# Logs / dumps / captures
+logs/
+*.log
+*.pcap
+*.pcapng
+*.evtx
+*.etl
+*.dmp
+*.dump
+*.core
+*.har
+*.jsonl
+*.ndjson
+*.tmp
+tmp/
+temp/
+cache/
+
+# Forensics / evidence (keep out of git)
+evidence/
+artifacts/
+samples/
+malware/
+ioc_exports/
+exports/
+downloads/
+
+# Secrets / credentials / tokens / keys / certs
+*.key
+*.pem
+*.pfx
+*.p12
+*.crt
+*.cer
+*.jks
+*.kdb
+*.kdbx
+*.ovpn
+*.env
+.env.*
+secrets/
+credentials/
+id_rsa
+id_rsa.pub
+*.age
+
+# Wazuh / Elastic / Docker volumes & generated content
+**/wazuh-docker/
+**/wazuh-docker-*/
+**/data/
+**/volumes/
+**/certs/
+**/config/certs/
+**/indexer-certs/
+**/wazuh-indexer-data/
+**/wazuh-manager-data/
+**/wazuh-dashboard-data/
+**/opensearch-data/
+**/elasticsearch-data/
+
+# Docker compose overrides / local configs
+docker-compose.override.yml
+compose.override.yml
+*.local.yml
+*.local.yaml
+
+# VM / Lab artifacts
+*.ova
+*.ovf
+*.vmdk
+*.vdi
+*.qcow2
+*.iso
+*.img
+*.box
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+# Reports generated outputs (optional: keep source MD only)
+reports/output/
