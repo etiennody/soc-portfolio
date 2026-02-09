@@ -49,3 +49,19 @@ Always leave:
 - What you found
 - Why you closed/escalated
 - Next steps & owner
+
+## Minimal evidence to capture (sanitized)
+- timestamp (approx)
+- agent.name / asset alias
+- alert category (auth / endpoint / network)
+- count (e.g., N attempts in M minutes)
+- decision + rationale
+- next steps / owner
+
+## Escalate to L2 if
+- Privileged account involved (sudo/admin) outside change window
+- "Success after failures" (auth brute force leading to login)
+- Persistence indicators (cron/systemd service/scheduled task)
+- Lateral movement suspicion (multiple hosts/users)
+- External source + high volume attempts
+- Any data exfil suspicion
